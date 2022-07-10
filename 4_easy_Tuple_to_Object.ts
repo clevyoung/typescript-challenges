@@ -1,5 +1,6 @@
 /**
  * Give an array, transform into an object type and the key/value must in the given array.
+ * Tuple은 수정하면 안되는 자료구조이다.
  */
 
 type TupleToObject<T extends readonly (string | number | symbol)[]> = {
