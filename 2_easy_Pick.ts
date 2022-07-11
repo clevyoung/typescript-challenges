@@ -6,3 +6,12 @@
 type MyPick<T, K extends keyof T> = {
   [P in K]: T[P];
 };
+
+interface Item {
+  title: string;
+  price: number;
+  code: string;
+  description: string;
+}
+
+function getItem(item: MyPick<Item, 'title' | 'price'>) {}
